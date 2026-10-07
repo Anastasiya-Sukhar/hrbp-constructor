@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRBP-конструктор: как думает бизнес-партнёр по персоналу</title>
+  <meta name="description" content="Демонстрационные кейсы на обезличенных данных. Интерактивный гид по типовым HR-ситуациям.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-decor" aria-hidden="true">
+    <span class="glow glow-1"></span>
+    <span class="glow glow-2"></span>
+    <span class="glow glow-3"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-mark">HRBP</span>
+        <span class="logo-text">конструктор</span>
+      </a>
+      <span class="header-tag">демо-кейсы</span>
+    </div>
+  </header>
+
+  <main class="container" id="app">
+
+    <!-- ======== Главная страница ======== -->
+    <section id="home-view">
+      <div class="hero">
+        <span class="hero-chip">🧭 гид по типовым HR-ситуациям</span>
+        <h1>HRBP-конструктор: как&nbsp;думает бизнес-партнёр по&nbsp;персоналу</h1>
+        <p class="subtitle">Демонстрационные кейсы на обезличенных данных.<br>Названия компаний и сотрудников изменены.</p>
+        <div class="hero-facts">
+          <span class="fact"><b>5</b> разборов ситуаций</span>
+          <span class="fact"><b>→</b> вопросы, план, принцип</span>
+          <span class="fact"><b>0</b> реальных данных</span>
+        </div>
+      </div>
+
+      <h2 class="section-label"><span>Выберите ситуацию</span></h2>
+      <div class="tiles" id="tiles"></div>
+    </section>
+
+    <!-- ======== Страница кейса ======== -->
+    <section id="case-view" hidden>
+      <a href="#" class="back-link" id="back-link">← Назад к ситуациям</a>
+      <article class="case" id="case-article">
+        <header class="case-head">
+          <span class="case-icon" id="case-icon"></span>
+          <div>
+            <span class="case-crumb" id="case-crumb"></span>
+            <h1 class="case-title" id="case-title"></h1>
+          </div>
+        </header>
+
+        <div class="case-body">
+
+        <div class="case-block" id="block-situation">
+          <h2><span class="bh-ico">📋</span>Ситуация</h2>
+          <p id="case-situation"></p>
+        </div>
+
+        <div class="case-block" id="block-sees">
+          <h2><span class="bh-ico">👁</span>Что видит HRBP</h2>
+          <ul class="list" id="case-sees"></ul>
+        </div>
+
+        <div class="case-block" id="block-questions">
+          <h2><span class="bh-ico">❓</span>Какие вопросы задаёт</h2>
+          <ul class="list list-questions" id="case-questions"></ul>
+        </div>
+
+        <div class="case-block" id="block-steps">
+          <h2><span class="bh-ico">🗺️</span>План действий</h2>
+          <ol class="steps" id="case-steps"></ol>
+        </div>
+
+        <div class="case-block" id="block-escalation">
+          <h2><span class="bh-ico">🤝</span>Когда подключать других</h2>
+          <ul class="list" id="case-escalation"></ul>
+        </div>
+
+        <div class="case-block case-principle" id="block-principle">
+          <h2><span class="bh-ico">💡</span>Принцип</h2>
+          <p id="case-principle"></p>
+        </div>
+
+        </div>
+      </article>
+
+      <div class="case-nav">
+        <a href="#" class="btn-back" id="back-link-bottom">← Назад к ситуациям</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Кейсы созданы на обезличенных данных. Названия изменены.<br>Цель — демонстрация методологии HRBP.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
